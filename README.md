@@ -1,0 +1,39 @@
+# Recruitment System AI
+## Description📝
+- This is a recruitment system that uses AI to help the recruitment process.
+- The system will help the HR department to filter the CVs and find the best candidates for the job.
+
+## System Architecture 🏗
+![alt text](readme/image.png)
+
+## Installation ⚡️
+### Requires
+- Python 3.10 or higher
+
+
+Create `.env` file as `template.env`
+
+## Run app with uvicorn 🚀
+~~~
+python -m venv venv
+source venv/bin/activate
+uvicorn app.main:app --host 127.0.0.1 --port 8001 --reload
+~~~
+
+## Tree directory 🌗
+~~~
+app
+├── api                  - web related stuff.
+│   ├── errors           - definition of error handlers.
+│   └── routes           - web routes.
+│   └── services         - logic that is not just crud related.
+│   └── schemas          - pydantic models for request and response.
+│   └── responses        - response for api request corresponding.
+│   └── helpers          - helper functions.
+├── core                 - application configuration, startup events, logging.
+├── logger               - export log for server process.
+├── tests                - test api, code.
+├── resources            - image, audio, csv, etc. (ignore)
+├── pyproject.toml       - dependencies and package.
+└── main.py              - FastAPI application creation and configuration.
+~~~

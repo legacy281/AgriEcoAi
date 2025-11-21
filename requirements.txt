@@ -1,0 +1,7 @@
+uvicorn
+google-genai
+google-generativeai
+loguru
+unidecode
+langdetect
+python-multipart
