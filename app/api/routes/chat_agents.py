@@ -21,8 +21,6 @@ available_agents = {
 
 chat_backend = ChatBackend(
     available_agents=available_agents,
-    product_name="gạo",
-    region_name="vietnam"
 )
 
 # Request model

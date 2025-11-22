@@ -10,5 +10,308 @@
       "agent": "null",
       "response": "Your name is Ngoc!"
     }
+  ],
+  "b1738565-057b-42eb-bb2f-361f7a5cf616": [
+    {
+      "user": "cho t\u00f4i gi\u00e1 c\u00e0 ph\u00ea",
+      "agent": "price_agent",
+      "response": {
+        "product": "g\u1ea1o",
+        "region": "Vi\u1ec7t Nam",
+        "market_price": {
+          "average_price": 18000,
+          "min_price": 15000,
+          "max_price": 22000,
+          "source": "Vietnam Market Analytics"
+        },
+        "predicted_price": {
+          "predicted_price": 20500,
+          "confidence": "Moderate"
+        },
+        "suggested_price": "19250 \u0111/kg"
+      }
+    }
+  ],
+  "f8c49795-1630-4785-8cd6-1907c70a3a4f": [
+    {
+      "user": "give me the reason of coffee",
+      "agent": "demand_agent",
+      "response": "That's a great question, because coffee is so much more than just a drink! The \"reason of coffee\" is really a blend of things:\n\n1.  **The Kick (Caffeine):** For a lot of people, it's that energy boost. It helps us wake up, feel more focused, and get going in the morning or push through an afternoon slump. It's a natural stimulant that many rely on to enhance productivity and alertness.\n\n2.  **The Sensory Pleasure:** Beyond the caffeine, there's the pure enjoyment of it. The rich aroma filling the kitchen, the warmth of the mug in your hands, that first complex, bitter-sweet sip. There's a huge variety of flavors and roasts to explore, making it a culinary experience for many.\n\n3.  **The Ritual and Routine:** Coffee is a powerful ritual. That morning cup often signals the start of the day, a moment of calm before the chaos, or a designated break during work. It's a comforting, familiar habit that provides structure to our day.\n\n4.  **The Social Connection:** \"Let's grab a coffee\" is practically a universal invitation for connection. It's a low-pressure way to catch up with friends, have a casual business meeting, or just spend time with someone. Coffee shops are social hubs!\n\n5.  **The Comfort and Warmth:** Especially on a chilly day, just holding a warm cup of coffee can be incredibly comforting and soothing.\n\nSo, the \"reason of coffee\" isn't just one thing. It's a beloved combination of feeling alert, savoring a delicious taste, embracing a comforting routine, and fostering connections. It's a small, daily pleasure that has a big impact on many lives."
+    }
+  ],
+  "b641917e-9b64-41b7-88e5-c37b5900cfa2": [
+    {
+      "user": "Gi\u00e1 \u1ed5i h\u00f4m nay",
+      "agent": "price_agent",
+      "response": {
+        "product": "g\u1ea1o",
+        "region": "Vi\u1ec7t Nam",
+        "market_price": {
+          "average_price": 15000,
+          "min_price": 12000,
+          "max_price": 18000,
+          "source": "Market Analysis Vietnam"
+        },
+        "predicted_price": {
+          "predicted_price": 18500,
+          "confidence": "Moderate"
+        },
+        "suggested_price": "16750 \u0111/kg"
+      }
+    }
+  ],
+  "d2bf42f1-e8f6-46a4-b6b9-1cafbc382832": [
+    {
+      "user": "Gi\u00e1 qu\u1ea3 \u1ed5i h\u00f4m nay",
+      "agent": "price_agent",
+      "response": {
+        "product": "g\u1ea1o",
+        "region": "Vi\u1ec7t Nam",
+        "market_price": {
+          "average_price": 15000,
+          "min_price": 12000,
+          "max_price": 18000,
+          "source": "Vietnamese Agricultural Market Report 2024"
+        },
+        "predicted_price": {
+          "predicted_price": 18000,
+          "confidence": "Moderate"
+        },
+        "suggested_price": "16500 \u0111/kg"
+      }
+    }
+  ],
+  "d2094a30-3103-45fd-af8e-c216346f7283": [
+    {
+      "user": "Gi\u00e1 t\u00e1o h\u00f4m nay",
+      "agent": "price_agent",
+      "response": {
+        "product": "g\u1ea1o",
+        "region": "Vi\u1ec7t Nam",
+        "market_price": {
+          "average_price": 20000,
+          "min_price": 15000,
+          "max_price": 25000,
+          "source": "Vietnam Agricultural Market Data"
+        },
+        "predicted_price": {
+          "predicted_price": 18000,
+          "confidence": "medium"
+        },
+        "suggested_price": "19000 \u0111/kg"
+      }
+    }
+  ],
+  "32c958aa-8a8a-4286-82bb-63e8a422721c": [
+    {
+      "user": "gi\u00e1 c\u00e0 ph\u00ea",
+      "agent": "price_agent",
+      "response": {
+        "product": "g\u1ea1o",
+        "region": "Vi\u1ec7t Nam",
+        "market_price": {
+          "average_price": 15000,
+          "min_price": 12000,
+          "max_price": 18000,
+          "source": "Vietnam Agricultural Market Report 2024"
+        },
+        "predicted_price": {
+          "predicted_price": 15000,
+          "confidence": "Medium"
+        },
+        "suggested_price": "15000 \u0111/kg"
+      }
+    }
+  ],
+  "67bc42b6-bb00-4e1d-a7ae-8e3ed57e8fc2": [
+    {
+      "user": "gi\u00e1 c\u00e0 ph\u00ea",
+      "product": "c\u00e0 ph\u00ea",
+      "region": "vietnam",
+      "agent": "price_agent",
+      "response": {
+        "product": "c\u00e0 ph\u00ea",
+        "region": "Vi\u1ec7t Nam",
+        "market_price": {
+          "average_price": 120000,
+          "min_price": 100000,
+          "max_price": 140000,
+          "source": "VietnameseCoffeeMarketAnalysis"
+        },
+        "predicted_price": {
+          "predicted_price": 45000,
+          "confidence": "Moderate"
+        },
+        "suggested_price": "82500 \u0111/kg"
+      }
+    }
+  ],
+  "46ec7dc8-6861-4149-b8a0-c2f9cd7247a2": [
+    {
+      "user": "\u0111\u1ec1 xu\u1ea5t s\u1ea3n ph\u1ea9m \u1edf h\u00e0 n\u1ed9i",
+      "product": null,
+      "region": "h\u00e0 n\u1ed9i",
+      "agent": null,
+      "response": "Ch\u00e0o b\u1ea1n! H\u00e0 N\u1ed9i c\u00f3 v\u00f4 v\u00e0n s\u1ea3n ph\u1ea9m \u0111\u1eb7c tr\u01b0ng v\u00e0 th\u00fa v\u1ecb, t\u00f9y thu\u1ed9c v\u00e0o m\u1ee5c \u0111\u00edch c\u1ee7a b\u1ea1n l\u00e0 mua l\u00e0m qu\u00e0, s\u1eed d\u1ee5ng c\u00e1 nh\u00e2n hay mu\u1ed1n kinh doanh m\u00e0 c\u00f3 nh\u1eefng g\u1ee3i \u00fd kh\u00e1c nhau. D\u01b0\u1edbi \u0111\u00e2y l\u00e0 m\u1ed9t s\u1ed1 \u0111\u1ec1 xu\u1ea5t ph\u1ed5 bi\u1ebfn v\u00e0 \u0111\u1eb7c tr\u01b0ng c\u1ee7a H\u00e0 N\u1ed9i:\n\n**I. \u0110\u1eb7c s\u1ea3n \u1ea9m th\u1ef1c (Th\u01b0\u1eddng d\u00f9ng l\u00e0m qu\u00e0 bi\u1ebfu ho\u1eb7c th\u01b0\u1edfng th\u1ee9c):**\n\n1.  **B\u00e1nh c\u1ed1m Nguy\u00ean Ninh:** Bi\u1ec3u t\u01b0\u1ee3ng \u1ea9m th\u1ef1c H\u00e0 N\u1ed9i, \u0111\u1eb7c bi\u1ec7t n\u1ed5i ti\u1ebfng v\u1edbi v\u1ecb c\u1ed1m d\u1ebbo th\u01a1m, nh\u00e2n \u0111\u1eadu xanh d\u1eeba.\n2.  **\u00d4 mai:** C\u00e1c lo\u1ea1i \u00f4 mai m\u01a1, s\u1ea5u, m\u1eadn, me... n\u1ed5i ti\u1ebfng c\u1ee7a c\u00e1c th\u01b0\u01a1ng hi\u1ec7u nh\u01b0 H\u1ed3ng Lam, V\u1ea1n L\u1ee3i.\n3.  **C\u1ed1m l\u00e0ng V\u00f2ng:** C\u1ed1m t\u01b0\u01a1i v\u00e0o m\u00f9a thu l\u00e0 m\u1ed9t n\u00e9t \u0111\u1eb7c tr\u01b0ng kh\u00f4ng th\u1ec3 b\u1ecf qua. N\u1ebfu kh\u00f4ng ph\u1ea3i m\u00f9a c\u1ed1m t\u01b0\u01a1i, c\u00f3 th\u1ec3 ch\u1ecdn c\u00e1c s\u1ea3n ph\u1ea9m t\u1eeb c\u1ed1m nh\u01b0 b\u00e1nh c\u1ed1m, ch\u00e8 c\u1ed1m.\n4.  **Tr\u00e0 sen T\u00e2y H\u1ed3:** Tr\u00e0 \u01b0\u1edbp b\u00f4ng sen t\u01b0\u01a1i ho\u1eb7c tr\u00e0 \u01b0\u1edbp g\u1ea1o sen mang h\u01b0\u01a1ng v\u1ecb thanh tao, tinh t\u00fay.\n5.  **B\u00e1nh ch\u1ea3, k\u1eb9o l\u1ea1c, k\u1eb9o v\u1eebng:** Nh\u1eefng m\u00f3n qu\u00e0 v\u1eb7t truy\u1ec1n th\u1ed1ng.\n6.  **C\u00e0 ph\u00ea tr\u1ee9ng:** M\u1eb7c d\u00f9 l\u00e0 \u0111\u1ed3 u\u1ed1ng, nh\u01b0ng s\u1ef1 \u0111\u1ed9c \u0111\u00e1o c\u1ee7a n\u00f3 c\u00f3 th\u1ec3 \u0111\u01b0\u1ee3c coi l\u00e0 m\u1ed9t \"s\u1ea3n ph\u1ea9m tr\u1ea3i nghi\u1ec7m\" kh\u00f4ng th\u1ec3 b\u1ecf qua khi \u0111\u1ebfn H\u00e0 N\u1ed9i.\n7.  **Gi\u00f2 ch\u1ea3 \u01af\u1edbc L\u1ec5:** M\u1ed9t \u0111\u1eb7c s\u1ea3n gi\u00f2 ch\u1ea3 th\u01a1m ngon, n\u1ed5i ti\u1ebfng kh\u1eafp c\u1ea3 n\u01b0\u1edbc.\n\n**II. Th\u1ee7 c\u00f4ng m\u1ef9 ngh\u1ec7 v\u00e0 qu\u00e0 l\u01b0u ni\u1ec7m:**\n\n1.  **L\u1ee5a V\u1ea1n Ph\u00fac:** N\u1ed5i ti\u1ebfng v\u1edbi ch\u1ea5t l\u01b0\u1ee3ng v\u00e0 \u0111\u1ed9 b\u1ec1n \u0111\u1eb9p. C\u00f3 th\u1ec3 mua kh\u0103n, \u00e1o d\u00e0i, ho\u1eb7c c\u00e1c s\u1ea3n ph\u1ea9m may m\u1eb7c t\u1eeb l\u1ee5a.\n2.  **G\u1ed1m s\u1ee9 B\u00e1t Tr\u00e0ng:** C\u00e1c s\u1ea3n ph\u1ea9m g\u1ed1m s\u1ee9 \u0111a d\u1ea1ng t\u1eeb \u0111\u1ed3 gia d\u1ee5ng, trang tr\u00ed \u0111\u1ebfn qu\u00e0 t\u1eb7ng v\u1edbi hoa v\u0103n \u0111\u1eb7c tr\u01b0ng.\n3.  **S\u1ea3n ph\u1ea9m s\u01a1n m\u00e0i:** H\u1ed9p, tranh, khay... v\u1edbi k\u1ef9 thu\u1eadt s\u01a1n m\u00e0i tinh x\u1ea3o.\n4.  **Tranh H\u00e0ng Tr\u1ed1ng / Tranh d\u00e2n gian:** Nh\u1eefng b\u1ee9c tranh mang \u0111\u1eadm n\u00e9t v\u0103n h\u00f3a truy\u1ec1n th\u1ed1ng c\u1ee7a H\u00e0 N\u1ed9i.\n5.  **\u0110\u1ed3 \u0111\u1ed3ng, b\u1ea1c H\u00e0ng B\u1ea1c:** C\u00e1c s\u1ea3n ph\u1ea9m trang s\u1ee9c, \u0111\u1ed3 trang tr\u00ed l\u00e0m t\u1eeb \u0111\u1ed3ng ho\u1eb7c b\u1ea1c.\n6.  **N\u00f3n l\u00e1:** M\u00f3n \u0111\u1ed3 th\u1ee7 c\u00f4ng truy\u1ec1n th\u1ed1ng, v\u1eeba l\u00e0 v\u1eadt d\u1ee5ng v\u1eeba l\u00e0 qu\u00e0 l\u01b0u ni\u1ec7m \u00fd ngh\u0129a.\n\n**III. S\u1ea3n ph\u1ea9m s\u00e1ng t\u1ea1o/th\u1eddi trang local:**\n\n1.  **Qu\u1ea7n \u00e1o, ph\u1ee5 ki\u1ec7n t\u1eeb c\u00e1c local brand:** H\u00e0 N\u1ed9i c\u00f3 r\u1ea5t nhi\u1ec1u th\u01b0\u01a1ng hi\u1ec7u th\u1eddi trang thi\u1ebft k\u1ebf ri\u00eang v\u1edbi phong c\u00e1ch \u0111\u1ed9c \u0111\u00e1o, ch\u1ea5t l\u01b0\u1ee3ng t\u1ed1t. (V\u00ed d\u1ee5: c\u00e1c c\u1eeda h\u00e0ng \u1edf khu v\u1ef1c T\u00f4n Th\u1ea5t Thi\u1ec7p, Nh\u00e0 Chung, ph\u1ed1 \u0111i b\u1ed9).\n2.  **\u0110\u1ed3 da th\u1ee7 c\u00f4ng:** V\u00ed, t\u00fai x\u00e1ch, s\u1ed5 da l\u00e0m th\u1ee7 c\u00f4ng v\u1edbi s\u1ef1 t\u1ec9 m\u1ec9 v\u00e0 \u0111\u1ed9c \u0111\u00e1o.\n3.  **C\u00e1c s\u1ea3n ph\u1ea9m thi\u1ebft k\u1ebf \u0111\u1ed9c \u0111\u00e1o:** G\u1ed1m s\u1ee9 hi\u1ec7n \u0111\u1ea1i, \u0111\u1ed3 decor, trang s\u1ee9c th\u1ee7 c\u00f4ng t\u1eeb c\u00e1c ngh\u1ec7 nh\u00e2n tr\u1ebb.\n\n**\u0110\u1ec3 c\u00f3 g\u1ee3i \u00fd ch\u00ednh x\u00e1c h\u01a1n, b\u1ea1n c\u00f3 th\u1ec3 cho m\u00ecnh bi\u1ebft th\u00eam:**\n\n*   **M\u1ee5c \u0111\u00edch:** Mua l\u00e0m qu\u00e0 cho ai (gia \u0111\u00ecnh, b\u1ea1n b\u00e8, \u0111\u1ed1i t\u00e1c), s\u1eed d\u1ee5ng c\u00e1 nh\u00e2n, hay t\u00ecm \u00fd t\u01b0\u1edfng kinh doanh?\n*   **Ng\u00e2n s\u00e1ch:** Kho\u1ea3ng gi\u00e1 b\u1ea1n mu\u1ed1n t\u00ecm ki\u1ebfm?\n*   **S\u1edf th\u00edch:** B\u1ea1n th\u00edch \u0111\u1ed3 \u0103n, \u0111\u1ed3 th\u1ee7 c\u00f4ng, th\u1eddi trang hay g\u00ec kh\u00e1c?\n\nM\u00ecnh r\u1ea5t s\u1eb5n l\u00f2ng h\u1ed7 tr\u1ee3 b\u1ea1n th\u00eam!"
+    }
+  ],
+  "38b20345-e84b-45bf-a658-55a6a1acad05": [
+    {
+      "user": "gi\u00e1 c\u1ee7a c\u00e0 ph\u00ea",
+      "product": "c\u00e0 ph\u00ea",
+      "region": "vietnam",
+      "agent": "price_agent",
+      "response": {
+        "product": "c\u00e0 ph\u00ea",
+        "region": "Vi\u1ec7t Nam",
+        "market_price": {
+          "average_price": 40000,
+          "min_price": 38000,
+          "max_price": 42000,
+          "source": "Agricultural Market Analysis Vietnam"
+        },
+        "predicted_price": {
+          "predicted_price": 45000,
+          "confidence": "Medium"
+        },
+        "suggested_price": "42500 \u0111/kg"
+      }
+    }
+  ],
+  "e5b06476-5c56-4471-958e-d3c45c051606": [
+    {
+      "user": "gi\u00e1 c\u1ee7a c\u00e0 ph\u00ea",
+      "product": "c\u00e0 ph\u00ea",
+      "region": "vietnam",
+      "agent": null,
+      "response": "Gi\u00e1 c\u00e0 ph\u00ea r\u1ea5t \u0111a d\u1ea1ng, ph\u1ee5 thu\u1ed9c v\u00e0o nhi\u1ec1u y\u1ebfu t\u1ed1 nh\u01b0:\n\n1.  **Lo\u1ea1i c\u00e0 ph\u00ea:** Robusta, Arabica, Moka, Culi...\n2.  **Ch\u1ea5t l\u01b0\u1ee3ng:** C\u00e0 ph\u00ea th\u00f4ng th\u01b0\u1eddng, c\u00e0 ph\u00ea \u0111\u1eb7c s\u1ea3n (specialty coffee), h\u1eefu c\u01a1...\n3.  **H\u00ecnh th\u1ee9c:** H\u1ea1t c\u00e0 ph\u00ea nh\u00e2n (ch\u01b0a rang), c\u00e0 ph\u00ea rang xay, c\u00e0 ph\u00ea h\u00f2a tan, hay m\u1ed9t ly c\u00e0 ph\u00ea \u0111\u00e3 pha s\u1eb5n.\n4.  **Th\u01b0\u01a1ng hi\u1ec7u/N\u01a1i b\u00e1n:** T\u1eeb c\u00e1c qu\u00e1n v\u1ec9a h\u00e8, si\u00eau th\u1ecb, \u0111\u1ebfn c\u00e1c chu\u1ed7i c\u00e0 ph\u00ea l\u1edbn hay c\u1eeda h\u00e0ng c\u00e0 ph\u00ea \u0111\u1eb7c s\u1ea3n.\n5.  **Th\u1eddi \u0111i\u1ec3m:** Gi\u00e1 c\u00e0 ph\u00ea tr\u00ean th\u1ecb tr\u01b0\u1eddng n\u00f4ng s\u1ea3n bi\u1ebfn \u0111\u1ed9ng li\u00ean t\u1ee5c.\n\nTuy nhi\u00ean, m\u00ecnh c\u00f3 th\u1ec3 \u0111\u01b0a ra m\u1ed9t s\u1ed1 m\u1ee9c gi\u00e1 tham kh\u1ea3o ph\u1ed5 bi\u1ebfn \u1edf Vi\u1ec7t Nam:\n\n*   **H\u1ea1t c\u00e0 ph\u00ea nh\u00e2n (ch\u01b0a rang):** Gi\u00e1 n\u00e0y th\u01b0\u1eddng d\u00e0nh cho c\u00e1c nh\u00e0 rang xay ho\u1eb7c ng\u01b0\u1eddi kinh doanh. Gi\u00e1 dao \u0111\u1ed9ng m\u1ea1nh t\u00f9y th\u1eddi \u0111i\u1ec3m v\u00e0 lo\u1ea1i, v\u00ed d\u1ee5 Robusta c\u00f3 th\u1ec3 t\u1eeb **40.000 - 60.000 VN\u0110/kg** ho\u1eb7c h\u01a1n (th\u1ecb tr\u01b0\u1eddng \u0111ang r\u1ea5t cao).\n*   **C\u00e0 ph\u00ea rang xay (nguy\u00ean ch\u1ea5t):**\n    *   Lo\u1ea1i ph\u1ed5 th\u00f4ng, pha phin: Kho\u1ea3ng **120.000 - 250.000 VN\u0110/kg** t\u00f9y ch\u1ea5t l\u01b0\u1ee3ng Robusta hay Arabica.\n    *   C\u00e0 ph\u00ea \u0111\u1eb7c s\u1ea3n (specialty coffee) ho\u1eb7c t\u1eeb c\u00e1c th\u01b0\u01a1ng hi\u1ec7u cao c\u1ea5p: C\u00f3 th\u1ec3 l\u00ean t\u1edbi **300.000 - 600.000 VN\u0110/kg** ho\u1eb7c h\u01a1n.\n*   **C\u00e0 ph\u00ea h\u00f2a tan:**\n    *   M\u1ed9t g\u00f3i nh\u1ecf ho\u1eb7c h\u1ed9p: T\u00f9y lo\u1ea1i, dao \u0111\u1ed9ng t\u1eeb **v\u00e0i ch\u1ee5c ngh\u00ecn \u0111\u1ebfn h\u01a1n 100.000 VN\u0110**.\n*   **M\u1ed9t ly c\u00e0 ph\u00ea \u1edf qu\u00e1n:**\n    *   **C\u00e0 ph\u00ea \u0111en \u0111\u00e1/n\u00f3ng:** T\u1eeb **15.000 - 30.000 VN\u0110** \u1edf c\u00e1c qu\u00e1n b\u00ecnh d\u00e2n, v\u1ec9a h\u00e8.\n    *   **C\u00e0 ph\u00ea s\u1eefa \u0111\u00e1/n\u00f3ng:** T\u1eeb **20.000 - 35.000 VN\u0110**.\n    *   **Espresso, Latte, Cappuccino:** T\u1eeb **35.000 - 70.000 VN\u0110** ho\u1eb7c h\u01a1n t\u00f9y qu\u00e1n (c\u00e1c chu\u1ed7i l\u1edbn nh\u01b0 Highlands, Starbucks c\u00f3 th\u1ec3 cao h\u01a1n).\n\nB\u1ea1n mu\u1ed1n bi\u1ebft gi\u00e1 c\u1ee7a lo\u1ea1i c\u00e0 ph\u00ea n\u00e0o c\u1ee5 th\u1ec3 h\u01a1n kh\u00f4ng?"
+    }
+  ],
+  "8a4bcca6-17b1-44dc-b55d-e200a5890817": [
+    {
+      "user": "gi\u00e1 c\u1ee7a c\u00e0 ph\u00ea",
+      "product": "c\u00e0 ph\u00ea",
+      "region": "vietnam",
+      "agent": null,
+      "response": "Gi\u00e1 c\u00e0 ph\u00ea th\u00ec r\u1ea5t \u0111a d\u1ea1ng, t\u00f9y thu\u1ed9c v\u00e0o nhi\u1ec1u y\u1ebfu t\u1ed1 b\u1ea1n \u1ea1, nh\u01b0 l\u00e0:\n\n1.  **N\u1ebfu b\u1ea1n h\u1ecfi gi\u00e1 m\u1ed9t ly c\u00e0 ph\u00ea \u1edf qu\u00e1n:**\n    *   **Qu\u00e1n b\u00ecnh d\u00e2n/v\u1ec9a h\u00e8:** Kho\u1ea3ng **10.000 - 25.000 VN\u0110** cho m\u1ed9t ly c\u00e0 ph\u00ea \u0111en \u0111\u00e1 ho\u1eb7c s\u1eefa \u0111\u00e1.\n    *   **Qu\u00e1n c\u00e0 ph\u00ea t\u1ea7m trung/c\u00f3 th\u01b0\u01a1ng hi\u1ec7u (nh\u01b0 Highlands Coffee, The Coffee House):** Kho\u1ea3ng **35.000 - 65.000 VN\u0110** cho c\u00e1c lo\u1ea1i ph\u1ed5 bi\u1ebfn.\n    *   **Qu\u00e1n c\u00e0 ph\u00ea cao c\u1ea5p/\u0111\u1eb7c s\u1ea3n (specialty coffee) ho\u1eb7c qu\u1ed1c t\u1ebf (Starbucks):** C\u00f3 th\u1ec3 t\u1eeb **70.000 VN\u0110 tr\u1edf l\u00ean**.\n\n2.  **N\u1ebfu b\u1ea1n h\u1ecfi gi\u00e1 c\u00e0 ph\u00ea h\u1ea1t/b\u1ed9t \u0111\u00f3ng g\u00f3i \u0111\u1ec3 pha t\u1ea1i nh\u00e0 (t\u1ea1i si\u00eau th\u1ecb):**\n    *   **C\u00e1c lo\u1ea1i ph\u1ed5 bi\u1ebfn (Trung Nguy\u00ean, Vinacafe, G7):**\n        *   G\u00f3i 250g: Kho\u1ea3ng **40.000 - 80.000 VN\u0110**.\n        *   G\u00f3i 500g: Kho\u1ea3ng **70.000 - 150.000 VN\u0110**.\n        *   G\u00f3i 1kg: Kho\u1ea3ng **150.000 - 300.000 VN\u0110** (t\u00f9y lo\u1ea1i v\u00e0 ch\u1ea5t l\u01b0\u1ee3ng).\n    *   **C\u00e1c lo\u1ea1i c\u00e0 ph\u00ea \u0111\u1eb7c s\u1ea3n ho\u1eb7c nh\u1eadp kh\u1ea9u:** C\u00f3 th\u1ec3 cao h\u01a1n nhi\u1ec1u, v\u00e0i tr\u0103m ngh\u00ecn \u0111\u1ebfn c\u1ea3 tri\u1ec7u cho 1kg.\n\nB\u1ea1n \u0111ang mu\u1ed1n h\u1ecfi gi\u00e1 c\u00e0 ph\u00ea lo\u1ea1i n\u00e0o c\u1ee5 th\u1ec3 h\u01a1n kh\u00f4ng?"
+    }
+  ],
+  "969dde72-59e7-4164-9e06-4ee89c7cc713": [
+    {
+      "user": "gi\u00e1 c\u1ee7a c\u00e0 ph\u00ea",
+      "product": "c\u00e0 ph\u00ea",
+      "region": "vietnam",
+      "agent": null,
+      "response": "Gi\u00e1 c\u00e0 ph\u00ea th\u00ec r\u1ea5t \u0111a d\u1ea1ng, t\u00f9y thu\u1ed9c v\u00e0o nhi\u1ec1u y\u1ebfu t\u1ed1 l\u1eafm b\u1ea1n \u1ea1! M\u00ecnh s\u1ebd chia ra m\u1ed9t v\u00e0i tr\u01b0\u1eddng h\u1ee3p ph\u1ed5 bi\u1ebfn \u0111\u1ec3 b\u1ea1n d\u1ec5 h\u00ecnh dung nh\u00e9:\n\n1.  **C\u00e0 ph\u00ea h\u1ea1t/b\u1ed9t (\u0111\u1ec3 pha t\u1ea1i nh\u00e0):**\n    *   **Lo\u1ea1i ph\u1ed5 th\u00f4ng (Robusta, c\u00e1c lo\u1ea1i pha tr\u1ed9n):** Th\u01b0\u1eddng c\u00f3 gi\u00e1 kho\u1ea3ng t\u1eeb **100.000 - 250.000 VN\u0110/kg**.\n    *   **C\u00e0 ph\u00ea Arabica ho\u1eb7c c\u00e1c lo\u1ea1i \u0111\u1eb7c s\u1ea3n, c\u00e0 ph\u00ea nh\u1eadp kh\u1ea9u:** Gi\u00e1 cao h\u01a1n, c\u00f3 th\u1ec3 t\u1eeb **300.000 - 700.000 VN\u0110/kg**, th\u1eadm ch\u00ed h\u01a1n n\u1eefa cho nh\u1eefng lo\u1ea1i \u0111\u1eb7c bi\u1ec7t.\n    *   **C\u00e0 ph\u00ea h\u00f2a tan (nh\u01b0 G7, Nescaf\u00e9):** T\u00ednh theo g\u00f3i/h\u1ed9p, th\u01b0\u1eddng kho\u1ea3ng **30.000 - 100.000 VN\u0110** cho m\u1ed9t h\u1ed9p nh\u1ecf.\n\n2.  **C\u00e0 ph\u00ea pha s\u1eb5n (u\u1ed1ng t\u1ea1i qu\u00e1n/mang \u0111i):**\n    *   **\u1ede c\u00e1c qu\u00e1n c\u00e0 ph\u00ea v\u1ec9a h\u00e8, b\u00ecnh d\u00e2n:** M\u1ed9t ly c\u00e0 ph\u00ea \u0111en \u0111\u00e1 ho\u1eb7c s\u1eefa \u0111\u00e1 th\u01b0\u1eddng c\u00f3 gi\u00e1 t\u1eeb **15.000 - 25.000 VN\u0110**.\n    *   **\u1ede c\u00e1c qu\u00e1n c\u00e0 ph\u00ea t\u1ea7m trung (qu\u00e1n c\u00f3 kh\u00f4ng gian):** Gi\u00e1 dao \u0111\u1ed9ng t\u1eeb **25.000 - 45.000 VN\u0110/ly**.\n    *   **\u1ede c\u00e1c chu\u1ed7i c\u00e0 ph\u00ea l\u1edbn (nh\u01b0 Highlands Coffee, Starbucks) ho\u1eb7c c\u00e1c qu\u00e1n c\u00e0 ph\u00ea sang tr\u1ecdng h\u01a1n:** Gi\u00e1 c\u00f3 th\u1ec3 t\u1eeb **50.000 - 80.000 VN\u0110/ly**, th\u1eadm ch\u00ed tr\u00ean 100.000 VN\u0110 cho c\u00e1c lo\u1ea1i \u0111\u1eb7c bi\u1ec7t.\n\n**C\u00e1c y\u1ebfu t\u1ed1 \u1ea3nh h\u01b0\u1edfng \u0111\u1ebfn gi\u00e1 bao g\u1ed3m:**\n*   Lo\u1ea1i h\u1ea1t (Robusta, Arabica, Typica...)\n*   Ngu\u1ed3n g\u1ed1c xu\u1ea5t x\u1ee9\n*   Th\u01b0\u01a1ng hi\u1ec7u\n*   Ch\u1ea5t l\u01b0\u1ee3ng rang xay\n*   V\u00e0 \u0111\u1ecba \u0111i\u1ec3m b\u1ea1n mua/u\u1ed1ng.\n\n\u0110\u1ec3 m\u00ecnh c\u00f3 th\u1ec3 cho b\u1ea1n m\u1ed9t c\u00e2u tr\u1ea3 l\u1eddi ch\u00ednh x\u00e1c h\u01a1n, b\u1ea1n mu\u1ed1n bi\u1ebft gi\u00e1 c\u00e0 ph\u00ea lo\u1ea1i n\u00e0o (h\u1ea1t, b\u1ed9t, h\u00f2a tan, hay ly pha s\u1eb5n) v\u00e0 \u1edf \u0111\u00e2u (mua v\u1ec1 hay u\u1ed1ng t\u1ea1i qu\u00e1n, \u1edf th\u00e0nh ph\u1ed1 n\u00e0o ch\u1eb3ng h\u1ea1n)?"
+    }
+  ],
+  "a91b712e-9290-4654-a679-af1fd4360485": [
+    {
+      "user": "gi\u00e1 c\u1ee7a c\u00e0 ph\u00ea hi\u1ec7n nay",
+      "product": "c\u00e0 ph\u00ea",
+      "region": "vietnam",
+      "agent": null,
+      "response": "Gi\u00e1 c\u00e0 ph\u00ea hi\u1ec7n nay l\u00e0 m\u1ed9t ch\u1ee7 \u0111\u1ec1 kh\u00e1 r\u1ed9ng v\u00e0 c\u00f3 nhi\u1ec1u y\u1ebfu t\u1ed1 \u1ea3nh h\u01b0\u1edfng, n\u00ean kh\u00f4ng c\u00f3 m\u1ed9t con s\u1ed1 c\u1ee5 th\u1ec3 duy nh\u1ea5t. Tuy nhi\u00ean, m\u00ecnh c\u00f3 th\u1ec3 chia s\u1ebb m\u1ed9t s\u1ed1 th\u00f4ng tin t\u1ed5ng quan nh\u01b0 sau:\n\n1.  **Gi\u00e1 c\u00e0 ph\u00ea nh\u00e2n (h\u1ea1t c\u00e0 ph\u00ea th\u00f4) tr\u00ean th\u1ecb tr\u01b0\u1eddng th\u1ebf gi\u1edbi:**\n    *   **Robusta:** Vi\u1ec7t Nam l\u00e0 n\u01b0\u1edbc xu\u1ea5t kh\u1ea9u Robusta l\u1edbn nh\u1ea5t th\u1ebf gi\u1edbi. Gi\u00e1 Robusta tr\u00ean s\u00e0n London (Liffe) trong th\u1eddi gian g\u1ea7n \u0111\u00e2y \u0111ang \u1edf m\u1ee9c kh\u00e1 cao v\u00e0 c\u00f3 nhi\u1ec1u bi\u1ebfn \u0111\u1ed9ng, ch\u1ee7 y\u1ebfu do lo ng\u1ea1i v\u1ec1 ngu\u1ed3n cung t\u1eeb Vi\u1ec7t Nam (th\u1eddi ti\u1ebft kh\u00f4 h\u1ea1n, t\u1ed3n kho th\u1ea5p) v\u00e0 Brazil. M\u1ee9c gi\u00e1 th\u01b0\u1eddng dao \u0111\u1ed9ng quanh ng\u01b0\u1ee1ng 3.500 - 4.000 USD/t\u1ea5n, th\u1eadm ch\u00ed c\u00f3 th\u1eddi \u0111i\u1ec3m v\u01b0\u1ee3t m\u1ee9c n\u00e0y.\n    *   **Arabica:** Gi\u00e1 Arabica tr\u00ean s\u00e0n New York (ICE US) c\u0169ng c\u00f3 nh\u1eefng bi\u1ebfn \u0111\u1ed9ng nh\u1ea5t \u0111\u1ecbnh, th\u01b0\u1eddng cao h\u01a1n Robusta, ch\u1ecbu \u1ea3nh h\u01b0\u1edfng b\u1edfi t\u00ecnh h\u00ecnh s\u1ea3n xu\u1ea5t \u1edf Brazil, Colombia v\u00e0 c\u00e1c n\u01b0\u1edbc Trung M\u1ef9.\n\n2.  **Gi\u00e1 c\u00e0 ph\u00ea th\u00e0nh ph\u1ea9m b\u00e1n l\u1ebb cho ng\u01b0\u1eddi ti\u00eau d\u00f9ng (t\u1ea1i si\u00eau th\u1ecb, c\u1eeda h\u00e0ng t\u1ea1p h\u00f3a):**\n    M\u1ee9c gi\u00e1 n\u00e0y s\u1ebd ph\u1ee5 thu\u1ed9c v\u00e0o nhi\u1ec1u y\u1ebfu t\u1ed1 nh\u01b0 lo\u1ea1i c\u00e0 ph\u00ea, th\u01b0\u01a1ng hi\u1ec7u, d\u1ea1ng c\u00e0 ph\u00ea (rang xay, h\u00f2a tan, h\u1ea1t nguy\u00ean ch\u1ea5t) v\u00e0 tr\u1ecdng l\u01b0\u1ee3ng.\n\n    *   **C\u00e0 ph\u00ea rang xay th\u00f4ng th\u01b0\u1eddng (v\u00ed d\u1ee5: Trung Nguy\u00ean, Vinacaf\u00e9, Con S\u00f3c...):**\n        *   Dao \u0111\u1ed9ng t\u1eeb kho\u1ea3ng **60.000 - 150.000 VN\u0110** cho t\u00fai 250g - 500g, t\u00f9y th\u01b0\u01a1ng hi\u1ec7u v\u00e0 ch\u1ea5t l\u01b0\u1ee3ng.\n    *   **C\u00e0 ph\u00ea h\u00f2a tan (v\u00ed d\u1ee5: Nescaf\u00e9, Vinacaf\u00e9, G7...):**\n        *   H\u1ed9p ho\u1eb7c g\u00f3i l\u1edbn c\u00f3 th\u1ec3 t\u1eeb **40.000 - 120.000 VN\u0110** tr\u1edf l\u00ean, t\u00f9y s\u1ed1 l\u01b0\u1ee3ng g\u00f3i nh\u1ecf b\u00ean trong v\u00e0 th\u01b0\u01a1ng hi\u1ec7u.\n    *   **C\u00e0 ph\u00ea h\u1ea1t nguy\u00ean ch\u1ea5t (cho m\u00e1y pha ho\u1eb7c t\u1ef1 xay):**\n        *   M\u1ee9c gi\u00e1 \u0111a d\u1ea1ng h\u01a1n, t\u1eeb kho\u1ea3ng **100.000 - 300.000 VN\u0110** cho 500g - 1kg, t\u00f9y lo\u1ea1i h\u1ea1t (Robusta, Arabica, Moka...) v\u00e0 nh\u00e0 rang xay. C\u00e0 ph\u00ea \u0111\u1eb7c s\u1ea3n (specialty coffee) c\u00f3 th\u1ec3 c\u00f2n cao h\u01a1n n\u1eefa.\n\n3.  **Gi\u00e1 m\u1ed9t ly c\u00e0 ph\u00ea pha s\u1eb5n t\u1ea1i qu\u00e1n:**\n\n    *   **Qu\u00e1n b\u00ecnh d\u00e2n/v\u1ec9a h\u00e8:** T\u1eeb **15.000 - 30.000 VN\u0110/ly** (c\u00e0 ph\u00ea \u0111en \u0111\u00e1, s\u1eefa \u0111\u00e1, b\u1ea1c x\u1ec9u...).\n    *   **Qu\u00e1n c\u00e0 ph\u00ea hi\u1ec7n \u0111\u1ea1i/chu\u1ed7i (v\u00ed d\u1ee5: Highlands Coffee, Starbucks, The Coffee House...):**\n        *   T\u1eeb **35.000 - 65.000 VN\u0110/ly**, t\u00f9y lo\u1ea1i \u0111\u1ed3 u\u1ed1ng (espresso, latte, cappuccino, macchiato...) v\u00e0 k\u00edch c\u1ee1.\n    *   **C\u00e0 ph\u00ea \u0111\u1eb7c s\u1ea3n (specialty coffee) t\u1ea1i c\u00e1c qu\u00e1n chuy\u00ean bi\u1ec7t:**\n        *   C\u00f3 th\u1ec3 cao h\u01a1n nhi\u1ec1u, t\u1eeb **70.000 - 150.000 VN\u0110/ly** t\u00f9y lo\u1ea1i h\u1ea1t, ph\u01b0\u01a1ng ph\u00e1p pha ch\u1ebf (pour-over, syphon, espresso shot) v\u00e0 \u0111\u1ed9 hi\u1ebfm c\u1ee7a h\u1ea1t.\n\n**T\u00f3m l\u1ea1i:** Gi\u00e1 c\u00e0 ph\u00ea hi\u1ec7n nay kh\u00e1 bi\u1ebfn \u0111\u1ed9ng tr\u00ean th\u1ecb tr\u01b0\u1eddng nguy\u00ean li\u1ec7u, v\u00e0 gi\u00e1 b\u00e1n l\u1ebb cho ng\u01b0\u1eddi ti\u00eau d\u00f9ng c\u0169ng r\u1ea5t \u0111a d\u1ea1ng t\u00f9y thu\u1ed9c v\u00e0o lo\u1ea1i s\u1ea3n ph\u1ea9m, th\u01b0\u01a1ng hi\u1ec7u v\u00e0 n\u01a1i b\u1ea1n mua. \u0110\u1ec3 c\u00f3 gi\u00e1 ch\u00ednh x\u00e1c nh\u1ea5t, b\u1ea1n n\u00ean ki\u1ec3m tra t\u1ea1i c\u00e1c si\u00eau th\u1ecb, c\u1eeda h\u00e0ng c\u00e0 ph\u00ea ho\u1eb7c c\u00e1c trang th\u01b0\u01a1ng m\u1ea1i \u0111i\u1ec7n t\u1eed v\u00e0o th\u1eddi \u0111i\u1ec3m b\u1ea1n mu\u1ed1n mua nh\u00e9."
+    }
+  ],
+  "60a6a3e3-cf5a-42ad-9657-f18ee2e9aa0e": [
+    {
+      "user": "gi\u00e1 c\u1ee7a c\u00e0 ph\u00ea hi\u1ec7n nay",
+      "product": "c\u00e0 ph\u00ea",
+      "region": "vietnam",
+      "agent": "price_agent",
+      "response": {
+        "product": "c\u00e0 ph\u00ea",
+        "region": "Vi\u1ec7t Nam",
+        "market_price": {
+          "average_price": 50000,
+          "min_price": 48000,
+          "max_price": 52000,
+          "source": "Vietnam Coffee Association"
+        },
+        "predicted_price": {
+          "predicted_price": 2800,
+          "confidence": "Medium"
+        },
+        "suggested_price": "26400 \u0111/kg"
+      }
+    }
+  ],
+  "a5f5c6ba-ea12-4f31-9939-c1c11e85efa6": [
+    {
+      "user": "d\u1ef1 \u0111o\u00e1n gi\u00e1 c\u00e0 ph\u00ea \u1edf hu\u1ebf",
+      "product": "c\u00e0 ph\u00ea",
+      "region": "hu\u1ebf",
+      "agent": "price_agent",
+      "response": {
+        "product": "c\u00e0 ph\u00ea",
+        "region": "Vi\u1ec7t Nam",
+        "market_price": {
+          "average_price": 60000,
+          "min_price": 45000,
+          "max_price": 75000,
+          "source": "Vietnamese Coffee Market Analysis"
+        },
+        "predicted_price": {
+          "predicted_price": 65000,
+          "confidence": "Moderate"
+        },
+        "suggested_price": "62500 \u0111/kg"
+      }
+    }
+  ],
+  "ed0993ae-a835-4921-9137-64fd43b2a1a4": [
+    {
+      "user": "d\u1ef1 \u0111o\u00e1n nhu c\u1ea7u c\u00e0 ph\u00ea \u1edf hu\u1ebf",
+      "product": "c\u00e0 ph\u00ea",
+      "region": "hu\u1ebf",
+      "agent": null,
+      "response": "D\u1ef1 \u0111o\u00e1n nhu c\u1ea7u c\u00e0 ph\u00ea \u1edf Hu\u1ebf l\u00e0 m\u1ed9t ch\u1ee7 \u0111\u1ec1 kh\u00e1 th\u00fa v\u1ecb! Nh\u00ecn chung, c\u00f3 v\u1ebb nh\u01b0 nhu c\u1ea7u c\u00e0 ph\u00ea \u1edf Hu\u1ebf s\u1ebd ti\u1ebfp t\u1ee5c **\u1ed5n \u0111\u1ecbnh v\u00e0 c\u00f3 xu h\u01b0\u1edbng t\u0103ng nh\u1eb9** trong th\u1eddi gian t\u1edbi, v\u1edbi m\u1ed9t s\u1ed1 \u0111\u1eb7c \u0111i\u1ec3m ri\u00eang bi\u1ec7t.\n\nD\u01b0\u1edbi \u0111\u00e2y l\u00e0 m\u1ed9t v\u00e0i y\u1ebfu t\u1ed1 c\u00f3 th\u1ec3 \u1ea3nh h\u01b0\u1edfng \u0111\u1ebfn nhu c\u1ea7u n\u00e0y:\n\n1.  **V\u0103n h\u00f3a c\u00e0 ph\u00ea \u0103n s\u00e2u:** Hu\u1ebf n\u1ed5i ti\u1ebfng v\u1edbi nh\u1ecbp s\u1ed1ng ch\u1eadm r\u00e3i, thanh b\u00ecnh. U\u1ed1ng c\u00e0 ph\u00ea kh\u00f4ng ch\u1ec9 l\u00e0 th\u1ee9c u\u1ed1ng m\u00e0 c\u00f2n l\u00e0 m\u1ed9t ph\u1ea7n l\u1ed1i s\u1ed1ng, l\u00e0 kh\u00f4ng gian g\u1eb7p g\u1ee1, tr\u00f2 chuy\u1ec7n, \u0111\u1ecdc s\u00e1ch hay \u0111\u01a1n gi\u1ea3n l\u00e0 ng\u1eafm ph\u1ed1 ph\u01b0\u1eddng. T\u1eeb nh\u1eefng qu\u00e1n v\u1ec9a h\u00e8 l\u00e2u \u0111\u1eddi \u0111\u1ebfn nh\u1eefng qu\u00e1n c\u00e0 ph\u00ea v\u01b0\u1eddn y\u00ean t\u0129nh, c\u00e0 ph\u00ea \u0111\u00e3 \u0103n s\u00e2u v\u00e0o n\u1ebfp sinh ho\u1ea1t c\u1ee7a ng\u01b0\u1eddi d\u00e2n. Nhu c\u1ea7u n\u00e0y kh\u00f3 c\u00f3 th\u1ec3 gi\u1ea3m.\n\n2.  **Du l\u1ecbch ph\u00e1t tri\u1ec3n:** V\u1edbi vi\u1ec7c Hu\u1ebf ng\u00e0y c\u00e0ng thu h\u00fat kh\u00e1ch du l\u1ecbch trong v\u00e0 ngo\u00e0i n\u01b0\u1edbc (\u0111\u1eb7c bi\u1ec7t l\u00e0 sau COVID-19 v\u00e0 c\u00e1c ch\u00ednh s\u00e1ch k\u00edch c\u1ea7u du l\u1ecbch), nhu c\u1ea7u c\u00e0 ph\u00ea t\u1eeb du kh\u00e1ch s\u1ebd t\u0103ng l\u00ean. H\u1ecd t\u00ecm ki\u1ebfm tr\u1ea3i nghi\u1ec7m v\u0103n h\u00f3a \u0111\u1ecba ph\u01b0\u01a1ng, v\u00e0 c\u00e0 ph\u00ea l\u00e0 m\u1ed9t ph\u1ea7n kh\u00f4ng th\u1ec3 thi\u1ebfu. C\u00e1c qu\u00e1n c\u00f3 kh\u00f4ng gian \u0111\u1eb9p, mang \u0111\u1eadm b\u1ea3n s\u1eafc Hu\u1ebf ho\u1eb7c c\u00f3 view s\u00f4ng H\u01b0\u01a1ng, \u0110\u1ea1i N\u1ed9i s\u1ebd c\u00e0ng thu h\u00fat.\n\n3.  **T\u1ea7ng l\u1edbp tr\u1ebb v\u00e0 xu h\u01b0\u1edbng m\u1edbi:** Gi\u1edbi tr\u1ebb Hu\u1ebf, \u0111\u1eb7c bi\u1ec7t l\u00e0 sinh vi\u00ean v\u00e0 nh\u1eefng ng\u01b0\u1eddi tr\u1ebb tu\u1ed5i, lu\u00f4n c\u1eadp nh\u1eadt c\u00e1c xu h\u01b0\u1edbng m\u1edbi. C\u00e1c qu\u00e1n c\u00e0 ph\u00ea \"check-in,\" c\u00e0 ph\u00ea specialty, cold brew... ng\u00e0y c\u00e0ng \u0111\u01b0\u1ee3c \u01b0a chu\u1ed9ng, t\u1ea1o ra m\u1ed9t ph\u00e2n kh\u00fac nhu c\u1ea7u m\u1edbi b\u00ean c\u1ea1nh c\u00e0 ph\u00ea truy\u1ec1n th\u1ed1ng. H\u1ecd kh\u00f4ng ch\u1ec9 u\u1ed1ng c\u00e0 ph\u00ea m\u00e0 c\u00f2n t\u00ecm ki\u1ebfm kh\u00f4ng gian \u0111\u1ec3 h\u1ecdc t\u1eadp, l\u00e0m vi\u1ec7c ho\u1eb7c g\u1eb7p g\u1ee1 b\u1ea1n b\u00e8.\n\n4.  **Ph\u00e1t tri\u1ec3n kinh t\u1ebf - x\u00e3 h\u1ed9i:** Thu nh\u1eadp b\u00ecnh qu\u00e2n \u0111\u1ea7u ng\u01b0\u1eddi t\u0103ng l\u00ean c\u0169ng c\u00f3 th\u1ec3 khuy\u1ebfn kh\u00edch vi\u1ec7c chi ti\u00eau cho c\u00e1c d\u1ecbch v\u1ee5 gi\u1ea3i tr\u00ed, bao g\u1ed3m c\u1ea3 vi\u1ec7c th\u01b0\u1edfng th\u1ee9c c\u00e0 ph\u00ea t\u1ea1i qu\u00e1n.\n\n**Tuy nhi\u00ean, s\u1ef1 t\u0103ng tr\u01b0\u1edfng n\u00e0y kh\u00f4ng \u0111\u1ed3ng \u0111\u1ec1u. C\u00f3 th\u1ec3 th\u1ea5y s\u1ef1 d\u1ecbch chuy\u1ec3n sang:**\n\n*   **C\u00e0 ph\u00ea truy\u1ec1n th\u1ed1ng v\u1eabn gi\u1eef v\u1ecb th\u1ebf:** C\u00e0 ph\u00ea s\u1eefa \u0111\u00e1, c\u00e0 ph\u00ea \u0111en \u0111\u00e1 v\u1eabn l\u00e0 l\u1ef1a ch\u1ecdn h\u00e0ng \u0111\u1ea7u c\u1ee7a s\u1ed1 \u0111\u00f4ng ng\u01b0\u1eddi d\u00e2n \u0111\u1ecba ph\u01b0\u01a1ng v\u00e0 du kh\u00e1ch mu\u1ed1n tr\u1ea3i nghi\u1ec7m v\u0103n h\u00f3a. \u0110\u00e2y l\u00e0 ph\u00e2n kh\u00fac c\u1ed1t l\u00f5i v\u00e0 \u1ed5n \u0111\u1ecbnh.\n*   **C\u00e0 ph\u00ea specialty v\u00e0 kh\u00f4ng gian \u0111\u1ed9c \u0111\u00e1o l\u00ean ng\u00f4i:** C\u00e1c qu\u00e1n c\u00e0 ph\u00ea \u0111\u1ea7u t\u01b0 v\u00e0o ch\u1ea5t l\u01b0\u1ee3ng h\u1ea1t, ph\u01b0\u01a1ng ph\u00e1p pha ch\u1ebf (cold brew, pour-over) v\u00e0 \u0111\u1eb7c bi\u1ec7t l\u00e0 kh\u00f4ng gian \u0111\u1eb9p, \u0111\u1ed9c \u0111\u00e1o, c\u00f3 t\u00ednh th\u1ea9m m\u1ef9 cao s\u1ebd thu h\u00fat gi\u1edbi tr\u1ebb v\u00e0 kh\u00e1ch du l\u1ecbch t\u00ecm ki\u1ebfm tr\u1ea3i nghi\u1ec7m kh\u00e1c bi\u1ec7t. Nhu c\u1ea7u cho lo\u1ea1i h\u00ecnh n\u00e0y c\u00f3 xu h\u01b0\u1edbng t\u0103ng nhanh.\n\n**Th\u00e1ch th\u1ee9c:**\n\n*   **C\u1ea1nh tranh gay g\u1eaft:** S\u1ed1 l\u01b0\u1ee3ng qu\u00e1n c\u00e0 ph\u00ea \u1edf Hu\u1ebf kh\u00e1 l\u1edbn v\u00e0 v\u1eabn \u0111ang t\u0103ng l\u00ean, \u0111\u00f2i h\u1ecfi c\u00e1c qu\u00e1n ph\u1ea3i c\u00f3 s\u1ef1 kh\u00e1c bi\u1ec7t r\u00f5 r\u1ec7t v\u1ec1 s\u1ea3n ph\u1ea9m, d\u1ecbch v\u1ee5 ho\u1eb7c kh\u00f4ng gian \u0111\u1ec3 gi\u1eef ch\u00e2n kh\u00e1ch.\n*   **Y\u1ebfu t\u1ed1 th\u1eddi ti\u1ebft:** M\u00f9a n\u00f3ng nhu c\u1ea7u c\u00e0 ph\u00ea \u0111\u00e1, \u0111\u1ed3 u\u1ed1ng gi\u1ea3i kh\u00e1t cao; m\u00f9a l\u1ea1nh th\u00ec c\u00e0 ph\u00ea n\u00f3ng ho\u1eb7c c\u00e1c lo\u1ea1i \u0111\u1ed3 u\u1ed1ng \u1ea5m.\n\nT\u00f3m l\u1ea1i, d\u1ef1 \u0111o\u00e1n nhu c\u1ea7u c\u00e0 ph\u00ea \u1edf Hu\u1ebf s\u1ebd **duy tr\u00ec \u0111\u00e0 t\u0103ng tr\u01b0\u1edfng nh\u1eb9 v\u00e0 \u1ed5n \u0111\u1ecbnh**, \u0111\u1eb7c bi\u1ec7t l\u00e0 \u1edf ph\u00e2n kh\u00fac c\u00e0 ph\u00ea truy\u1ec1n th\u1ed1ng v\u00e0 c\u00e0 ph\u00ea specialty v\u1edbi kh\u00f4ng gian \u0111\u1ed9c \u0111\u00e1o. C\u00e1c ch\u1ee7 qu\u00e1n c\u1ea7n hi\u1ec3u r\u00f5 kh\u1ea9u v\u1ecb \u0111\u1ecba ph\u01b0\u01a1ng, n\u1eafm b\u1eaft xu h\u01b0\u1edbng m\u1edbi v\u00e0 t\u1ea1o ra gi\u00e1 tr\u1ecb kh\u00e1c bi\u1ec7t \u0111\u1ec3 th\u00e0nh c\u00f4ng."
+    }
+  ],
+  "4c0d1530-6af1-49dd-b208-3c5dba1f0ba3": [
+    {
+      "user": "gi\u00e1 c\u00e0 ph\u00ea \u1edf hu\u1ebf",
+      "product": "c\u00e0 ph\u00ea",
+      "region": "Hu\u1ebf",
+      "agent": "price_agent",
+      "response": {
+        "product": "c\u00e0 ph\u00ea",
+        "region": "Vi\u1ec7t Nam",
+        "market_price": {
+          "average_price": 60000,
+          "min_price": 58000,
+          "max_price": 62000,
+          "source": "Agricultural Market Analysis"
+        },
+        "predicted_price": {
+          "predicted_price": 55000,
+          "confidence": "medium"
+        },
+        "suggested_price": "57500 \u0111/kg"
+      }
+    }
+  ],
+  "a93fe5f1-8e5b-4f30-a0f3-8edb87e8cf1d": [
+    {
+      "user": "gi\u00e1 c\u00e0 ph\u00ea \u1edf hu\u1ebf",
+      "product": "c\u00e0 ph\u00ea",
+      "region": "hu\u1ebf",
+      "agent": "price_agent",
+      "response": {
+        "product": "c\u00e0 ph\u00ea",
+        "market_price": {
+          "average_price": 72000,
+          "min_price": 70000,
+          "max_price": 75000,
+          "source": "Agricultural Market Analysis Vietnam"
+        },
+        "predicted_price": {
+          "predicted_price": 3000,
+          "confidence": "medium"
+        },
+        "suggested_price": "37500 \u0111/kg"
+      }
+    }
   ]
 }
