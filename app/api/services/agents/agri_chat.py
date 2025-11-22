@@ -13,29 +13,23 @@ client = genai.Client(api_key=API_KEY)
 
 
 class ChatBackend:
-    def __init__(self, available_agents, product_name: str, region_name: str = "vietnam", json_file="sessions.json"):
+    def __init__(self, available_agents, json_file="sessions.json"):
         self.available_agents = available_agents
-        self.product_name = product_name
-        self.region_name = region_name
         self.client = client
         self.llm_model = "gemini-2.5-flash"
         self.json_file = json_file
 
-        # 🌟 Lưu session + lịch sử chat
-        # { session_id: [ {user, agent, response}, ... ] }
+        # Sessions: { session_id: [ {user, agent, response}, ... ] }
         self.sessions: Dict[str, List[Dict]] = {}
         self.load_sessions()
 
     # ===================================================
-    #   Lưu sessions ra JSON
+    #   Load & Save session
     # ===================================================
     def save_sessions(self):
         with open(self.json_file, "w") as f:
             json.dump(self.sessions, f, indent=2)
 
-    # ===================================================
-    #   Load sessions từ JSON
-    # ===================================================
     def load_sessions(self):
         try:
             with open(self.json_file, "r") as f:
@@ -43,9 +37,6 @@ class ChatBackend:
         except FileNotFoundError:
             self.sessions = {}
 
-    # ===================================================
-    #   Tạo session mới
-    # ===================================================
     def create_session(self) -> str:
         session_id = str(uuid.uuid4())
         self.sessions[session_id] = []
@@ -53,86 +44,162 @@ class ChatBackend:
         return session_id
 
     # ===================================================
-    #   Gọi agent tool
+    #   AI extraction: Tự nhận biết sản phẩm & vùng miền
     # ===================================================
-    def _call_agent_tool(self, agent_name: str) -> dict:
+    def extract_entities(self, text: str) -> Dict[str, str]:
+        """
+        Trích xuất product + region từ câu hỏi.
+        Ví dụ đầu ra:
+        {
+            "product": "gạo",
+            "region": "long an"
+        }
+        """
+
+        prompt = f"""
+        Extract agricultural entities from this text:
+
+        "{text}"
+
+        Return JSON with:
+        - product: main agriculture product mentioned
+        - region: place/location mentioned (or "vietnam" if none)
+
+        Example output:
+        {{
+            "product": "gạo",
+            "region": "đồng bằng sông cửu long"
+        }}
+        """
+
+        try:
+            response = self.client.models.generate_content(
+                model=self.llm_model,
+                contents=prompt,
+                config=GenerateContentConfig(
+                    response_mime_type="application/json"
+                )
+            )
+            return json.loads(response.text)
+        except:
+            return {"product": "unknown", "region": "vietnam"}
+
+    # ===================================================
+    #   Gọi agent tool sau khi đã có product & region
+    # ===================================================
+    def _call_agent_tool(self, agent_name: str, product: str, region: str):
         agent_name = agent_name.lower()
+
         if agent_name == "price_agent":
-            return self.available_agents['price_agent'].execute(self.product_name)
+            return self.available_agents['price_agent'].execute(product)
+
         elif agent_name == "recommend_agent":
-            return self.available_agents['recommend_agent'].execute(self.region_name)
+            return self.available_agents['recommend_agent'].execute(region)
+
         elif agent_name == "demand_agent":
-            return self.available_agents['demand_agent'].execute(self.product_name, self.region_name)
+            return self.available_agents['demand_agent'].execute(product, region)
+
         else:
             raise ValueError(f"Unknown agent: {agent_name}")
 
     # ===================================================
-    #   Fallback chat với LLM, dùng lịch sử session
+    #   Fallback LLM chat (giống ChatGPT thông thường)
     # ===================================================
     def _fallback_chat(self, user_input: str, session_id: str) -> str:
-        history_text = ""
         history = self.sessions.get(session_id, [])
-        for turn in history[-10:]:  # chỉ lấy 10 lượt gần nhất
+        history_text = ""
+
+        for turn in history[-10:]:
             history_text += f"User: {turn['user']}\nAI: {turn['response']}\n"
 
         prompt = f"{history_text}User asked: {user_input}. Answer naturally."
 
         try:
-            response = self.client.models.generate_content(
+            res = self.client.models.generate_content(
                 model=self.llm_model,
                 contents=prompt,
                 config=GenerateContentConfig(response_mime_type="text/plain")
             )
-            return response.text
+            return res.text
         except Exception as e:
-            return f"❌ LLM fallback error: {e}"
+            return f"❌ Fallback LLM error: {e}"
 
     # ===================================================
-    #   Chat theo session
+    #   MAIN CHAT FUNCTION
     # ===================================================
-    def chat(self, user_input: str, session_id: str) -> Dict:
+    def chat(self, user_input: str, session_id: str):
         if session_id not in self.sessions:
             self.sessions[session_id] = []
 
+        # ------------------------------------
+        # 1️⃣ Tự động nhận biết product & region
+        # ------------------------------------
+        entities = self.extract_entities(user_input)
+        product = entities.get("product", "unknown")
+        region = entities.get("region", "vietnam")
+
+        # ------------------------------------
+        # 2️⃣ Router LLM chọn agent
+        # ------------------------------------
         tools_list = ", ".join(self.available_agents.keys())
-        prompt = f"""
-You are an AI router. User asked: "{user_input}"
-Available tools/agents: {tools_list}
-Decide which agent/tool to call and return only the agent name in JSON:
-{{"agent": "price_agent"}}
-"""
+
+        router_prompt = f"""
+        User asked: "{user_input}"
+
+        Available agents: {tools_list}
+
+        Choose exactly 1 agent that best handles the request.
+        Return JSON only.
+        Example:
+        {{"agent": "price_agent"}}
+        """
 
         try:
-            response = self.client.models.generate_content(
+            router_response = self.client.models.generate_content(
                 model=self.llm_model,
-                contents=prompt,
+                contents=router_prompt,
                 config=GenerateContentConfig(response_mime_type="application/json")
             )
 
-            response_json = json.loads(response.text)
-            agent_name = response_json.get("agent")
+            router_json = json.loads(router_response.text)
+            agent_name = router_json.get("agent")
 
+            # ---------------------
+            # 3️⃣ Gọi đúng agent
+            # ---------------------
             if agent_name:
-                final_output = self._call_agent_tool(agent_name)
+                final_output = self._call_agent_tool(agent_name, product, region)
             else:
                 final_output = self._fallback_chat(user_input, session_id)
 
         except Exception as e:
-            print("Router LLM failure, using fallback:", e)
+            print("Router failed:", e)
             final_output = self._fallback_chat(user_input, session_id)
+            agent_name = None
 
-        # 🌟 Lưu vào lịch sử session
+        # ------------------------------------
+        # 4️⃣ Lưu lịch sử
+        # ------------------------------------
         self.sessions[session_id].append({
             "user": user_input,
-            "agent": agent_name if agent_name else None,
+            "product": product,
+            "region": region,
+            "agent": agent_name,
             "response": final_output
         })
-        self.save_sessions()  # lưu ngay ra file JSON
 
-        return {"response": final_output, "session_id": session_id}
+        self.save_sessions()
+
+        return {
+            "session_id": session_id,
+            "product": product,
+            "region": region,
+            "agent": agent_name,
+            "response": final_output
+        }
 
     # ===================================================
-    #   Lấy lịch sử session
+    #   Get lịch sử session
     # ===================================================
     def get_history(self, session_id: str):
         return self.sessions.get(session_id, [])

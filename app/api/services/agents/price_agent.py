@@ -30,13 +30,14 @@ class PredictedPriceSchema(BaseModel):
 class PriceAgent(Agent):
     """Agent dùng GenAI SDK mới để tra cứu giá sản phẩm."""
     name = "Price Agent"
-    description = "Get structured market price data for agricultural products."
+    description = "Get market price data for agricultural products."
 
     def __init__(self):
         print("Initializing PriceAgent...")
         self.client = genai.Client(api_key=GOOGLE_API_KEY)
 
     def llm_search_market_price(self, product: str, region: str) -> dict:
+        print("Searching market price for", product, "in", region)
         prompt = f"""
         You are an expert agricultural market analyst. 
         Given the product "{product}" and region "{region}", 
@@ -100,7 +101,6 @@ Respond ONLY with JSON.
         )
         return {
             "product": product,
-            "region": region,
             "market_price": market_data,
             "predicted_price": future_data,
             "suggested_price": f"{suggested_price} đ/kg"

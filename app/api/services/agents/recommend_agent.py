@@ -9,6 +9,7 @@ from agno.agent import Agent
 
 load_dotenv()
 GOOGLE_API_KEY = os.getenv("LLM_API_KEY")
+print("GOOGLE_API_KEY loaded1:", GOOGLE_API_KEY)
 MODEL_NAME = "gemini-2.5-flash"
 
 # ==============================
@@ -61,12 +62,12 @@ Chỉ trả JSON, không giải thích.
                 "source": "Fallback/Dummy / Historical Data"
             }
 
-    def predict_top_products_in_region(self, location) -> list:
+    def predict_top_products_in_region(self, region: str, top_n: int = 5) -> list:
         """Tìm top N sản phẩm nổi bật trong vùng và dự đoán supply/demand."""
         # 1️⃣ Gợi ý danh sách sản phẩm nổi bật trong vùng
         prompt_products = f"""
 Bạn là chuyên gia nông nghiệp. 
-Liệt kê top 5 sản phẩm nông sản nổi bật ở vùng "{location}" 
+Liệt kê top {top_n} sản phẩm nông sản nổi bật ở vùng "{region}" 
 có hoạt động thị trường sôi động. 
 Trả về mảng JSON các tên sản phẩm như ["sản phẩm 1", "sản phẩm 2", ...].
 Chỉ trả JSON, không giải thích.
@@ -88,9 +89,8 @@ Chỉ trả JSON, không giải thích.
         # 2️⃣ Dự đoán supply/demand cho từng sản phẩm
         results = []
         for product in products:
-            data = self.predict_supply_demand_for_product(product, location)
+            data = self.predict_supply_demand_for_product(product, region)
             results.append(data)
-        print("RecommendAgent results:", results)
         return results
 
 # ==============================
