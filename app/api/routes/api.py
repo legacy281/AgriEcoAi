@@ -8,4 +8,4 @@ app = APIRouter()
 
 app.include_router(chat_router.router, tags=["Chat"], prefix="/chat")
 app.include_router(scoring_router.router, tags=["Scoring"], prefix="/scoring")
-app.include_router(scan_cv_router.router, tags=["Scan CV"], prefix="/scan-cv")
+app.include_router(scan_cv_router.router, tags=["Extract post"], prefix="/extract-post")
