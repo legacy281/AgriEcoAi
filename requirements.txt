@@ -7,3 +7,4 @@ unidecode
 langdetect
 python-multipart
 python-dotenv
+agno==1.8.1
