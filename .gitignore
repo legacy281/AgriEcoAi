@@ -210,10 +210,10 @@ Thumbs.db
 !.vscode/extensions.json
 
 # file
-*.csv
+# *.csv
 *.joblib
 *.joblib.dat
-*.npy
+# *.npy
 *.xlsx
 
 # End of https://www.toptal.com/developers/gitignore/api/pycharm,python,jupyternotebooks,vscode,visualstudiocode
