@@ -12,5 +12,6 @@ class ChatService:
 
         model = genai.GenerativeModel(MODEL_NAME)
         response = model.generate_content(message)
+        print(response)
         text = response._result.candidates[0].content.parts[0].text
         return text

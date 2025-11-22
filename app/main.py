@@ -96,8 +96,6 @@ def get_application() -> FastAPI:
         allow_methods=["*"],
         allow_headers=["*"],
     )
-    application.add_middleware(CheckKeyMiddleware)
-
     application.add_middleware(LoggingMiddleware)
     # application.add_middleware(GZipMiddleware, minimum_size=1000)
     application.add_middleware(TrustedHostMiddleware, allowed_hosts=["*"])

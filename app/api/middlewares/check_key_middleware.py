@@ -1,9 +1,12 @@
+import logging
 from starlette.middleware.base import BaseHTTPMiddleware
 from fastapi import Request
 from fastapi.responses import JSONResponse
+from dotenv import load_dotenv
+load_dotenv()
 import os
 
-API_KEY = os.getenv("INTERNAL_API_KEY", "super_secret_key_123")
+API_KEY = os.getenv("LLM_API_KEY", "super_secret_key_123")
 
 class CheckKeyMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request: Request, call_next):
