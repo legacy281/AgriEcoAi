@@ -28,21 +28,26 @@ chat_backend = ChatBackend(
 # Request model
 class ChatRequest(BaseModel):
     message: str
+    session_id: str = None 
 
 
 @router.post("")
 async def general_chat(payload: ChatRequest):
     """
-    General AI chat using agent routing (no session).
+    General AI chat using agent routing with session.
     """
     try:
+        # Nếu không có session_id, tạo mới
+        session_id = payload.session_id or chat_backend.create_session()
+
         result = chat_backend.chat(
-            user_input=payload.message
+            user_input=payload.message,
+            session_id=session_id
         )
 
         return BaseResponse.success_response(
             message="Chat success",
-            data=result
+            data=result  # data chứa response + session_id
         )
 
     except requests.RequestException as e:
