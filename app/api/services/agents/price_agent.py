@@ -91,19 +91,60 @@ Respond ONLY with JSON.
 
     def suggest_price(self, current_price: int, predicted_price: int) -> int:
         return int((current_price + predicted_price) / 2)
+    def format_price_response(self, product: str, region: str, market: dict, future: dict, suggested: int) -> str:
+        """
+        Gửi dữ liệu sang Gemini để viết lại thành câu trả lời tự nhiên.
+        """
+        prompt = f"""
+You are an agricultural market advisor.
+Rewrite the following data into a natural, human-friendly explanation:
 
-    def execute(self, product: str, region: str = "Việt Nam") -> dict:
+Product: {product}
+Region: {region}
+
+Current Market Price:
+- Average: {market['average_price']} đ/kg
+- Min: {market['min_price']} đ/kg
+- Max: {market['max_price']} đ/kg
+- Source: {market['source']}
+
+Predicted Future Price:
+- Next Month: {future['predicted_price']} đ/kg
+- Confidence: {future['confidence']}
+
+Suggested Trading Price:
+- {suggested} đ/kg
+
+Write the answer as a friendly advisory message for farmers.
+Do NOT output JSON. Respond in natural Vietnamese.
+"""
+        try:
+            response = self.client.models.generate_content(
+                model=MODEL_NAME,
+                contents=prompt,
+            )
+            return response.text
+        except Exception as e:
+            print("❌ Natural response API error:", e)
+            return (
+                f"Giá {product} tại {region} hiện trung bình khoảng {market['average_price']:,} đ/kg. "
+                f"Dự đoán tháng tới khoảng {future['predicted_price']:,} đ/kg. "
+                f"Giá giao dịch gợi ý: {suggested:,} đ/kg."
+            )
+
+    def execute(self, product: str, region: str = "Việt Nam") -> str:
         market_data = self.llm_search_market_price(product, region)
         future_data = self.llm_predict_future_price(product, region)
         suggested_price = self.suggest_price(
             market_data.get("average_price", 25000),
             future_data.get("predicted_price", 26000)
         )
-        return {
-            "product": product,
-            "market_price": market_data,
-            "predicted_price": future_data,
-            "suggested_price": f"{suggested_price} đ/kg"
-        }
+
+        # 🔥 Gọi hàm tạo câu trả lời tự nhiên
+        natural_text = self.format_price_response(
+            product, region, market_data, future_data, suggested_price
+        )
+
+        return natural_text
 
 
