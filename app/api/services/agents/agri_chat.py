@@ -10,7 +10,6 @@ import dotenv
 dotenv.load_dotenv()
 
 API_KEY = os.environ.get("LLM_API_KEY")
-print("API_KEY loaded:", API_KEY)
 client = genai.Client(api_key=API_KEY)
 
 class ChatBackend:

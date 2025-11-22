@@ -7,7 +7,6 @@ from google import genai
 from agno.agent import Agent
 load_dotenv()
 GOOGLE_API_KEY = os.getenv("LLM_API_KEY")
-print("GOOGLE_API_KEY loaded1:", GOOGLE_API_KEY)
 MODEL_NAME = "gemini-2.5-flash"
 
 # ==============================
@@ -49,7 +48,6 @@ class DemandAgent(Agent):
                     response_schema=SupplyDemandSchema.model_json_schema()
                 )
             )
-            print("DemandAgent API response:", response.text)
             return json.loads(response.text)
         except Exception as e:
             print("❌ Supply/Demand API error:", e)

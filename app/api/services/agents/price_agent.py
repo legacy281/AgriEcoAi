@@ -9,7 +9,6 @@ from agno.agent import Agent
 
 load_dotenv()
 GOOGLE_API_KEY = os.getenv("LLM_API_KEY")
-print("GOOGLE_API_KEY loaded:", GOOGLE_API_KEY)
 MODEL_NAME = "gemini-2.5-flash"
 
 # ==============================
