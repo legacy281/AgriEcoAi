@@ -7,3 +7,7 @@ unidecode
 langdetect
 python-multipart
 python-dotenv
+numpy
+pandas
+sentence-transformers
+
