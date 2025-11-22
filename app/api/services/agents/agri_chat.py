@@ -168,6 +168,7 @@ class ChatBackend:
             # 3️⃣ Gọi đúng agent
             # ---------------------
             if agent_name:
+                print("Calling agent:", agent_name, "with product:", product, "and region:", region)
                 final_output = self._call_agent_tool(agent_name, product, region)
             else:
                 final_output = self._fallback_chat(user_input, session_id)
