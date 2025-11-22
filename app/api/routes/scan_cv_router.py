@@ -11,7 +11,8 @@ chat_service = ChatService()
 # Schema
 # =======================
 class PostDescription(BaseModel):
-    description: str
+    title: str
+    content: str
 
 class PostInfo(BaseModel):
     category: str
@@ -28,7 +29,7 @@ CATEGORY_NAMES = ["Rau củ", "Cây ăn quả", "Cây công nghiệp"]
 # =======================
 @router.post("/extract-post", response_model=PostInfo)
 async def extract_post_info(payload: PostDescription):
-    text = payload.description
+    text = payload.title + " " + payload.content
     category = "Nông sản"
 
     # =======================

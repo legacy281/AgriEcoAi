@@ -19,7 +19,7 @@ DEBUG: bool = config("DEBUG", cast=bool, default=False)
 APP_HOST: str = config("APP_HOST", cast=str, default="127.0.0.1")
 APP_PORT: str = config("APP_PORT", cast=str, default="9001")
 
-PROJECT_NAME: str = config("Recruitment System AI", default="Recruitment System AI")
+PROJECT_NAME: str = config("PROJECT_NAME", default="Agri System AI")
 ALLOWED_HOSTS: list[str] = config(
     "ALLOWED_HOSTS",
     cast=CommaSeparatedStrings,

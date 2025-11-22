@@ -7,6 +7,8 @@ unidecode
 langdetect
 python-multipart
 python-dotenv
+agno==1.8.1
+orjson
 numpy
 pandas
 sentence-transformers
