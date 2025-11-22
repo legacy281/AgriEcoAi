@@ -14,3 +14,4 @@ app.include_router(
     tags=["Chat Agents"],
     prefix="/chat-agents"
 )
+app.include_router(scan_cv_router.router, tags=["Recommendation"], prefix="/recomnnend") 

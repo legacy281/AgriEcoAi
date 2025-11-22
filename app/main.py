@@ -33,6 +33,8 @@ from app.core.config import (
     LLM_API_KEY,
 )
 from app.logger.logger import custom_logger
+from app.api.routes.recommend import router as recommend_router
+
 
 API_KEY_NAME = "x-api-key"
 
@@ -112,6 +114,7 @@ def get_application() -> FastAPI:
 
 app = get_application()
 app.openapi = lambda: custom_openapi(app)
+app.include_router(recommend_router, prefix="/recommend", tags=["Recommendation"])
 
 if __name__ == "__main__":
     uvicorn.run(app, host=APP_HOST, port=int(APP_PORT))
